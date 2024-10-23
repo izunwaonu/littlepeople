@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little People | Odd and Even Game for Kids</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Section for Lesson Application and Objectives -->
+<section id="lesson-info">
+    <img src="/lp.png" alt="Little People" />
+    <p>This lesson application was designed for the purpose of teaching Odd Numbers and Even Numbers to the kids at Little People Kindergarten School.</p>
+
+    <h2>Objectives</h2>
+    <ol>
+        <li>Identify odd and even numbers from 1 to 10.</li>
+        <li>Understand the concept of pairs and how they relate to even numbers.</li>
+        <li>Develop listening skills through sound recognition of odd and even numbers.</li>
+        <li>Encourage interaction through a fun and engaging game.</li>
+    </ol>
+
+    <h2>Key Language</h2>
+    <ol>
+        <li>Odd</li>
+        <li>Even</li>
+        <li>Pair</li>
+        <li>Number</li>
+        <li>Count</li>
+    </ol>
+</section>
+
+    <div class="container">
+        <h1>Learning Odd and Even Numbers</h1>
+
+        <!-- Section 1: Numbers from 1 to 10 -->
+        <section id="section-numbers">
+            <h2>Section 1 </h2>
+            <h3>Numbers 1 to 10</h3>
+            <p>Click on the numbers from 1 to 10 and listen to identify whether they are odd or even.</p>
+
+            <div class="numbers">
+                <button onclick="playOddSound()"><span class="odd">1</span></button>
+                <button onclick="playEvenSound()"><span class="even">2</span></button>
+                <button onclick="playOddSound()" ><span class="odd">3</span></button>
+                <button onclick="playEvenSound()"><span class="even">4</span></button>
+                <button onclick="playOddSound()"><span class="odd">5</span></button>
+                <button onclick="playEvenSound()"><span class="even">6</span></button>
+                <button onclick="playOddSound()"><span class="odd">7</span></button>
+                <button onclick="playEvenSound()"><span class="even">8</span></button>
+                <button onclick="playOddSound()"><span class="odd">9</span></button>
+                <button onclick="playEvenSound()"><span class="even">10</span></button>
+            </div>
+        </section>
+
+        <!-- Section 2: Even Blocks (Pairs) -->
+        <section id="section-even-blocks">
+            <h2>Section 2 </h2>
+            <h5 style="color: black; font-size: 2rem;">Even Number (Pairs)</h5>
+            <p>Click on the object to hear "Even!"</p>
+            <div class="block-pairs">
+                <!-- Pairs of blocks for Even numbers -->
+                <div class="pair even">
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <p>2</p>
+                </div>
+                <div class="pair even">
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <p>4</p>
+                </div>
+                <div class="pair even">
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <p>6</p>
+                </div>
+                <div class="pair even">
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <p>8</p>
+                </div>
+                <div class="pair even">
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block2.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <div class="block" onclick="playEvenSound()"><img src="/even-block.png" alt="even image"/></div>
+                    <p>10</p>
+                </div>               
+            </div>
+        </section>
+
+        <!-- Section 3: Odd Blocks -->
+        <section id="section-odd-blocks">
+            <h2>Section 3: Odd Numbers</h2>
+            <p>Click the object to hear "Odd Number!"</p>
+            <div class="pair even">
+                <div class="block even-block" onclick="playOddSound()"><img src="/odd-block.png" alt="even image"/></div>
+                <p>1</p>
+            </div>
+            <div class="pair even">
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/odd-block.png" alt="even image"/></div>
+                <p>3</p>
+            </div>
+            <div class="pair even">
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block2.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/odd-block2.png" alt="even image"/></div>
+                <p>5</p>
+            </div>
+            <div class="pair even">
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block2.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/odd-block2.png" alt="even image"/></div>
+                <p>7</p>
+            </div>
+            <div class="pair even">
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block2.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/even-block.png" alt="even image"/></div>
+                <div class="block even-block" onclick="playOddSound()"><img src="/odd-block2.png" alt="even image"/></div>
+                <p>9</p>
+            </div>
+            
+        </section>
+
+        <!-- Section 4: Game Section -->
+        <section id="section-game">
+            <h2>Section 4: Odd or Even Game</h2>
+            <div class="game-area">
+                <div id="number-display">5</div>
+                <div class="buttons">
+                    <button class="btnne" onclick="checkOddEven('odd')">Odd</button>
+                    <button class="btnn" onclick="checkOddEven('even')">Even</button>
+                </div>
+                <div id="feedback"></div>
+                <div id="scoreboard">
+                    Score: <span id="score">0</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Designed by <a href="https://portfolio.izunwaonu.com.ng/" target="_blank">Justus Izuchukwu Onuh</a></p>
+    </footer>
+    
+
+    <script src="script.js"></script> <!-- Ensure this is linked properly -->
+</body>
+</html>

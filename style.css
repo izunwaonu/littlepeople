@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light background color for better contrast */
+    text-align: center; /* Center text alignment */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+button{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.container {
+    padding: 20px; /* Padding around the container */
+}
+
+/* Main Heading Style */
+h1 {
+    color: #ff6347; /* Tomato color for main heading */
+    font-size: 2.5rem; /* Font size for the main heading */
+}
+
+/* Section Styles */
+section {
+    margin-top: 30px; /* Space above each section */
+    padding: 20px; /* Space inside each section */
+}
+
+/* Section Heading Style */
+h2 {
+    color: #4682b4; /* Steel blue color for section headings */
+    font-size: 2rem; /* Font size for section headings */
+}
+
+/* Number Display Styles */
+.numbers {
+    display: flex; /* Use flexbox to align numbers */
+    flex-wrap: wrap; /* Allow wrapping to the next line on small screens */
+    justify-content: center; /* Center numbers horizontally */
+    font-size: 4rem; /* Font size for the numbers */
+  
+}
+
+/* Number Color Styles */
+.even {
+    color: blue; /* Color for even numbers */
+    margin: 10px; /* Margin around even numbers */
+}
+
+.odd {
+    color: red; /* Color for odd numbers */
+    margin: 10px; /* Margin around odd numbers */
+}
+
+/* Even Number Blocks Styles */
+.block-pairs {
+    display: flex; /* Use flexbox for block pairs */
+    flex-direction: column; /* Stack pairs vertically */
+    align-items: center; /* Center pairs horizontally */
+    justify-content: center;
+}
+
+.pair {
+    display: flex; /* Use flexbox for each pair */
+    justify-content: center; /* Center blocks within the pair */
+    align-items: center; /* Align blocks vertically */
+    margin-bottom: 20px; /* Space below each pair */
+}
+
+/* Block Styles */
+.block {
+    width: 60px; /* Fixed width for blocks */
+    height: 60px; /* Fixed height for blocks */
+    margin: 10px; /* Margin around blocks */
+    display: flex; /* Use flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    color: white; /* Text color for blocks */
+    font-size: 1.5rem; /* Font size for block text */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+   margin: 3rem;
+    gap: 10px;
+}
+ol{
+    list-style: none;
+}
+
+
+/* Hover Effect for Blocks */
+.block:hover {
+    background-color: #5f9ea0; /* Change background color on hover */
+}
+
+/* Pair Label Style */
+.pair p {
+    margin-left: 10px; /* Space between blocks and the label */
+    font-size: 1.5rem; /* Font size for the label */
+    color: #4682b4; /* Label color */
+}
+
+/* Game Section Styles */
+.game-area {
+    margin-top: 30px; /* Space above game area */
+}
+
+/* Number Display in Game */
+#number-display {
+    font-size: 4rem; /* Font size for displayed number */
+    color: #4caf50; /* Green color for the number */
+    margin-bottom: 20px; /* Space below the number display */
+}
+
+/* Button Styles */
+.buttons {
+    margin: 20px 0; /* Vertical margin for button container */
+}
+
+.btnn {
+    background-color: #ff6347; /* Background color for buttons */
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Padding for buttons */
+    font-size: 1.2rem; /* Font size for buttons */
+    color: white; /* Text color for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 10px; /* Margin around buttons */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    justify-content: center;
+}
+.btnne {
+    background-color: blue;
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Padding for buttons */
+    font-size: 1.2rem; /* Font size for buttons */
+    color: white; /* Text color for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 10px; /* Margin around buttons */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    justify-content: center;
+}
+
+/* Button Hover Effect */
+.btnn:hover {
+    background-color: #ff4500; /* Darker color on hover */
+}
+
+/* Feedback and Scoreboard Styles */
+#feedback {
+    margin-top: 20px; /* Space above feedback area */
+    font-size: 2rem; /* Font size for feedback */
+    color: #333; /* Dark color for feedback text */
+}
+
+.correct {
+    color: #4caf50; /* Green color for correct feedback */
+}
+
+.wrong {
+    color: #ff6347; /* Red color for wrong feedback */
+}
+
+/* Scoreboard Style */
+#scoreboard {
+    margin-top: 20px; /* Space above scoreboard */
+    font-size: 1.5rem; /* Font size for scoreboard */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) { /* Media query for small screens */
+    .numbers, .block-pairs, .blocks { /* Adjust layout for smaller screens */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .btnn { /* Adjust button size for small screens */
+        width: 90%; /* Full width buttons */
+        font-size: 1.2rem; /* Smaller font size */
+    }
+}
